@@ -1,0 +1,118 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.brand-header {
+    grid-area: text-nav;
+    text-align: center;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.nav-links {
+    grid-area: nav;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding: 20px;
+
+
+
+}
+
+.site-section {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.section-link {
+    text-decoration: none;
+    color: grey;
+}
+
+.section-link:hover {
+    text-decoration: underline;
+}
+
+.article-title {
+    color: gray;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    font-size: 25px;
+
+
+}
+
+.article-text {
+    padding: 10px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.article-img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.story {
+    border: 2px solid black;
+}
+
+.story-1 {
+    grid-area: story-1;
+
+}
+
+.story-2 {
+    grid-area: story-2;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.story-3 {
+    grid-area: story-3;
+
+}
+
+.story-4 {
+    grid-area: story-4;
+
+}
+
+.double-story {
+    grid-area: double-story;
+
+}
+
+.page {
+    display: grid;
+
+    width: 100%;
+    padding: 10px;
+    grid-template-areas:
+        "text-nav text-nav text-nav"
+        "nav nav nav"
+        "story-1 story-2 story-3"
+        "story-4 double-story double-story";
+
+
+}

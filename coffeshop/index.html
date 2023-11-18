@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div class="w-full bg-gray-200 h-[100dvh] flex flex-col">
+      <nav class="bg-[#43281c] flex w-full p-3 justify-center gap-2">
+        <img src="./coffee_masters_logo.png" alt="" class="w-6 h-6" />
+        <p class="text-[#ddd1a5]">Coffee Master</p>
+      </nav>
+      <main class="p-6 flex flex-col justify-between">
+        <div class="w-full flex gap-2">
+          <div class="basis-2/4 bg-[#eee1d5] p-4 rounded-lg shadow h-[300px]">
+            <h3>ITEMS</h3>
+            <div class="border-b-2 py-3 border-[#ead7c5] flex justify-between">
+              <div class="flex gap-3">
+                <p>1x</p>
+                <div class="flex flex-col">
+                  <h2 class="font-medium">Cappuchino</h2>
+                  <p class="font-normal text-sm text-[#b7987a]">Lite Foam</p>
+                </div>
+              </div>
+              <p class="pr-6">$4.50</p>
+            </div>
+            <div class="border-b-2 py-3 border-[#ead7c5] flex justify-between">
+              <div class="flex gap-3">
+                <p>1x</p>
+                <div class="flex flex-col">
+                  <h2 class="font-medium">Cappuchino</h2>
+                  <p class="font-normal text-sm text-[#b7987a]">Lite Foam</p>
+                  <p class="font-normal text-sm text-[#b7987a]">
+                    Double espresso
+                  </p>
+                </div>
+              </div>
+              <p class="pr-6">$4.50</p>
+            </div>
+            <div class="py-3 flex justify-between">
+              <div class="flex gap-3">
+                <p>1x</p>
+                <div class="flex flex-col">
+                  <h2 class="font-medium">Cappuchino</h2>
+                  <p class="font-normal text-sm text-[#b7987a]">Lite Foam</p>
+                </div>
+              </div>
+              <p class="pr-6">$4.50</p>
+            </div>
+          </div>
+          <div class="basis-2/4 px-10">
+            <div class="bg-[#eee1d5] p-3 w-full rounded-lg shadow">
+              <p class="py-3">Name</p>
+              <div class="p-2">
+                <div class="inline-block relative w-full">
+                  <label
+                    for="example"
+                    class="left-[25px] absolute top-[-15px] py-0 px-[2px] bg-[#eee1d5]"
+                    >Example Text</label
+                  >
+                  <input
+                    id="example"
+                    class="p-[8px] bg-[#eee1d5] border-2 border-[#b7987a] rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-[#b7987a]"
+                    placeholder="try typing here"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#eee1d5] p-3 w-full rounded-lg shadow mt-8">
+              <p class="py-3">Payment</p>
+              <div class="p-2">
+                <div class="inline-block relative w-full">
+                  <label
+                    for="example"
+                    class="left-[25px] absolute top-[-15px] py-0 px-[2px] bg-[#eee1d5]"
+                    >Example Text</label
+                  >
+                  <input
+                    id="example"
+                    class="p-[8px] bg-[#eee1d5] border-2 border-[#b7987a] rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-[#b7987a]"
+                    placeholder="try typing here"
+                  />
+                </div>
+              </div>
+              <div class="p-2">
+                <div class="inline-block relative w-full">
+                  <label
+                    for="ccv"
+                    class="left-[25px] absolute top-[-15px] py-0 px-[2px] bg-[#eee1d5]"
+                    >CCV Number</label
+                  >
+                  <input
+                    id="ccv"
+                    class="p-[8px] bg-[#eee1d5] border-2 border-[#b7987a] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#b7987a]"
+                    placeholder="001"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div
+        class="flex flex-col flex flex-col mt-auto justify-end p-10 items-center gap-2"
+      >
+        <div class="w-96 flex justify-between">
+          <div>
+            <p>Subtotal:</p>
+            <p>Tax:</p>
+            <p>Total:</p>
+          </div>
+          <div>
+            <p>$9.5</p>
+            <p>$0.5</p>
+            <p>$10</p>
+          </div>
+        </div>
+        <button class="w-full rounded-2xl bg-[#deb993] p-2">place order</button>
+      </div>
+    </div>
+  </body>
+</html>
